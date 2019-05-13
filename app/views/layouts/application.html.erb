@@ -12,20 +12,22 @@
   <body>
     <header class="row">
        <div class="col-3">
-        <div class="circle">
-          <br />
-          Literally
-          <br />
-          the best
-          <br />
-          quotes.
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            Literally
+            <br />
+            the best
+            <br />
+           quotes.
+         </div>
+        <% end %>
       </div>
     <div class="col-4 slogan">
       It's a quote gets quote world out there.
     </div> 
     <div class="col-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
     </header>
@@ -46,7 +48,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6 footer-blurb">
-            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly created by LLCoolDane with the help of Vanderbilt coding bootcamp.
