@@ -37,11 +37,16 @@
   <div class="container">
     <%= yield %>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            This isn't enough, I need more
+          <div class="col-6 footer-blurb">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly created by LLCoolDane with the help of Vanderbilt coding bootcamp.
